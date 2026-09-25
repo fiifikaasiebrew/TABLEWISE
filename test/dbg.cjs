@@ -1,0 +1,20 @@
+const { chromium } = require('/home/claude/.npm-global/lib/node_modules/playwright');
+(async () => {
+  const b = await chromium.launch(); const p = await b.newPage({ viewport: { width: 1440, height: 900 } });
+  p.on('pageerror', e => console.log('pageerror', e.message));
+  await p.route('**/*', r => r.request().url().startsWith('file:') ? r.continue() : r.abort());
+  await p.goto('file://' + __dirname + '/page.html'); await p.waitForSelector('#loading', { state: 'detached' });
+  await p.evaluate(() => go('browse', 'customers')); await p.waitForSelector('#dataGrid');
+  await p.click('#addFilterBtn'); const s=await p.$$('.frule select'); await s[0].selectOption('city'); await s[1].selectOption('eq'); await p.fill('.frule input[aria-label="Value"]','Accra'); await p.waitForTimeout(700); console.log(await p.textContent('.grid-foot span'));
+  await p.click('#addRowBtn'); await p.fill('#f_company_name', 'Kaasiebrew Holdings'); await p.fill('#f_city', 'Accra');
+  await p.click('.modal footer .btn.primary'); await p.waitForTimeout(500);
+  console.log('toasts:', await p.$$eval('.toast', t => t.map(x => x.textContent)));
+  console.log(await p.textContent('.grid-foot span'));
+  await p.check('#dataGrid tbody tr:first-child .ck input'); await p.click('#delSelBtn');
+  console.log('modal buttons:', await p.$$eval('.modal footer button', t => t.map(x => x.className + ':' + x.textContent)));
+  await p.click('.modal footer .btn.danger'); await p.waitForTimeout(500);
+  console.log('toasts:', await p.$$eval('.toast', t => t.map(x => x.textContent)));
+  console.log(await p.textContent('.grid-foot span'));
+  await p.screenshot({ path: __dirname + '/dbg.png' });
+  await b.close();
+})();

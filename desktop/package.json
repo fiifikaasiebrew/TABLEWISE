@@ -1,0 +1,76 @@
+{
+  "name": "tablewise",
+  "version": "1.3.0",
+  "description": "A simple database manager for people who do not write SQL",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win nsis portable"
+  },
+  "author": "Fiifi Kaasiebrew",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "mssql": "^12.7.2",
+    "mysql2": "^3.24.4",
+    "pg": "^8.23.0",
+    "sql.js": "^1.14.2",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "electron": "^44.4.5",
+    "electron-builder": "^26.15.3"
+  },
+  "productName": "Tablewise",
+  "build": {
+    "appId": "com.tablewise.app",
+    "productName": "Tablewise",
+    "directories": {
+      "output": "release",
+      "buildResources": "build"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "app/**",
+      "build/icon.png",
+      "node_modules/**",
+      "!node_modules/**/{test,tests,docs,example,examples}/**"
+    ],
+    "asarUnpack": [
+      "node_modules/sql.js/dist/sql-wasm.wasm"
+    ],
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Tablewise",
+      "artifactName": "Tablewise-Setup-${version}.exe",
+      "installerIcon": "build/icon.ico",
+      "uninstallerIcon": "build/icon.ico",
+      "license": "build/license.txt"
+    },
+    "portable": {
+      "artifactName": "Tablewise-Portable-${version}.exe"
+    },
+    "fileAssociations": [
+      {
+        "ext": [
+          "sqlite",
+          "db",
+          "sqlite3"
+        ],
+        "name": "SQLite database",
+        "role": "Editor"
+      }
+    ]
+  }
+}

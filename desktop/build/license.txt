@@ -1,0 +1,10 @@
+Tablewise
+
+Tablewise is a database manager for people who do not write SQL.
+
+By installing Tablewise you agree that:
+- You are responsible for the databases you connect to and the changes you make.
+- Always keep backups of important data. Tablewise asks before deleting, but server databases cannot be undone.
+- AI features send your question and your table structure to the AI provider you choose. Example rows are only sent if you turn on "Let the AI look at data".
+
+Built with Electron, sql.js, node-postgres, mysql2, mssql and SheetJS, each under its own open-source license.

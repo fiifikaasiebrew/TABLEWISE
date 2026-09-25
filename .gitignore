@@ -1,0 +1,7 @@
+node_modules/
+desktop/release/
+dist/
+desktop/app/
+test/*.png
+test/page.html
+*.log
