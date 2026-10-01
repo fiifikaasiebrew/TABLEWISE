@@ -1,3 +1,8 @@
+/*
+ * Tablewise — view-design.js
+ * Author: Fiifi Kaasiebrew (https://github.com/fiifikaasiebrew)
+ * Copyright (c) 2026 Fiifi Kaasiebrew. All rights reserved.
+ */
 /* Design tables: create tables, add/rename/remove columns, rename/delete tables */
 const TEMPLATES = {
   Contacts: [['full_name', 'text', true], ['email', 'text', false, true], ['phone', 'text'], ['company', 'text'], ['notes', 'longtext']],

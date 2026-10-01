@@ -1,3 +1,8 @@
+/*
+ * Tablewise — learn-3.js
+ * Author: Fiifi Kaasiebrew (https://github.com/fiifikaasiebrew)
+ * Copyright (c) 2026 Fiifi Kaasiebrew. All rights reserved.
+ */
 /* Learn SQL — part 3: changing data, designing databases. Examples run on a private practice copy. */
 
 /* ================= 7. CHANGING DATA ================= */

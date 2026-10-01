@@ -1,12 +1,14 @@
 # Tablewise
 
+**Designed and built by [Fiifi Kaasiebrew](https://github.com/fiifikaasiebrew).**
+
 A simple, beginner-friendly database manager for Windows. Browse, filter, add, edit and delete data like a spreadsheet, build questions by drag and drop, and learn SQL from zero with the built-in course. No SQL knowledge needed.
 
 ![Home](screenshots/v_home.png)
 
 ## Download
 
-Get **Tablewise-Setup-1.3.0.exe** from the [Releases](../../releases/latest) page and double-click it.
+Get the latest **Tablewise-Setup** file from the [Releases](../../releases/latest) page and double-click it.
 
 - Windows 10 or 11, 64-bit.
 - Windows may say "Windows protected your PC" because the installer isn't signed. Click **More info**, then **Run anyway**.
@@ -51,4 +53,8 @@ npx electron-builder --win nsis --x64   # make the Windows installer in desktop/
 - `desktop/` – the Electron wrapper: database drivers, saved connections and AI calls
 - `test/` – Playwright checks
 
-© Fiifi Kaasiebrew. All rights reserved.
+## Author
+
+Tablewise is designed, written and maintained by **Fiifi Kaasiebrew** ([@fiifikaasiebrew](https://github.com/fiifikaasiebrew)).
+
+Copyright © 2026 Fiifi Kaasiebrew. All rights reserved. See [LICENSE](LICENSE).

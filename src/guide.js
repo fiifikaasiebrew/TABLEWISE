@@ -1,3 +1,8 @@
+/*
+ * Tablewise — guide.js
+ * Author: Fiifi Kaasiebrew (https://github.com/fiifikaasiebrew)
+ * Copyright (c) 2026 Fiifi Kaasiebrew. All rights reserved.
+ */
 /* Guide drawer, glossary, guided tour and the AI assistant */
 const GUIDES = {
   home: { t: 'Home', html: `

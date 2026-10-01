@@ -1,3 +1,8 @@
+/*
+ * Tablewise — view-home.js
+ * Author: Fiifi Kaasiebrew (https://github.com/fiifikaasiebrew)
+ * Copyright (c) 2026 Fiifi Kaasiebrew. All rights reserved.
+ */
 /* Dashboard */
 TW.views = TW.views || {};
 TW.views.home = async function (root) {

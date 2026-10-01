@@ -1,3 +1,8 @@
+/*
+ * Tablewise — sample-data.js
+ * Author: Fiifi Kaasiebrew (https://github.com/fiifikaasiebrew)
+ * Copyright (c) 2026 Fiifi Kaasiebrew. All rights reserved.
+ */
 /* Tablewise — builds the "Northwind Supply Co." practice database */
 (function (root) {
   function buildSampleSQL() {

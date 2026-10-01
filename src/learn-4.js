@@ -1,3 +1,8 @@
+/*
+ * Tablewise — learn-4.js
+ * Author: Fiifi Kaasiebrew (https://github.com/fiifikaasiebrew)
+ * Copyright (c) 2026 Fiifi Kaasiebrew. All rights reserved.
+ */
 /* Learn SQL — part 4: advanced queries and working like a professional. */
 
 /* ================= 9. ADVANCED QUERIES ================= */

@@ -1,3 +1,8 @@
+/*
+ * Tablewise — desk.cjs
+ * Author: Fiifi Kaasiebrew (https://github.com/fiifikaasiebrew)
+ * Copyright (c) 2026 Fiifi Kaasiebrew. All rights reserved.
+ */
 const Module = require('module'); const path = require('path'); const fs = require('fs'); const os = require('os');
 const handlers = {}; const ud = fs.mkdtempSync(path.join(os.tmpdir(), 'twud'));
 const fake = { app: { getPath: () => ud, requestSingleInstanceLock: () => false, quit() {}, on() {}, whenReady: () => new Promise(() => {}), getVersion: () => '1' }, ipcMain: { handle: (c, f) => handlers[c] = f }, dialog: {}, safeStorage: { isEncryptionAvailable: () => false }, shell: {}, Menu: { buildFromTemplate: () => ({}) }, net: {}, BrowserWindow: function () {} };

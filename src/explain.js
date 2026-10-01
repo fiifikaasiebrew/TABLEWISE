@@ -1,3 +1,8 @@
+/*
+ * Tablewise — explain.js
+ * Author: Fiifi Kaasiebrew (https://github.com/fiifikaasiebrew)
+ * Copyright (c) 2026 Fiifi Kaasiebrew. All rights reserved.
+ */
 /* Explain mode: point at anything to get a very simple explanation */
 const X = {
   'tab-home': ['Home', 'The front page. It shows every table and how many rows each one has, like counting the toys in each box.'],

@@ -1,3 +1,8 @@
+/*
+ * Tablewise — main.js
+ * Author: Fiifi Kaasiebrew (https://github.com/fiifikaasiebrew)
+ * Copyright (c) 2026 Fiifi Kaasiebrew. All rights reserved.
+ */
 // Tablewise desktop — main process
 const { app, BrowserWindow, ipcMain, dialog, safeStorage, shell, Menu, net } = require('electron');
 const path = require('path');

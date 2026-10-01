@@ -1,3 +1,8 @@
+/*
+ * Tablewise — run.cjs
+ * Author: Fiifi Kaasiebrew (https://github.com/fiifikaasiebrew)
+ * Copyright (c) 2026 Fiifi Kaasiebrew. All rights reserved.
+ */
 const { chromium } = require('/home/claude/.npm-global/lib/node_modules/playwright');
 (async () => {
   const b = await chromium.launch();

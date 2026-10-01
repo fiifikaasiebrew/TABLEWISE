@@ -1,3 +1,8 @@
+/*
+ * Tablewise — lib.cjs
+ * Author: Fiifi Kaasiebrew (https://github.com/fiifikaasiebrew)
+ * Copyright (c) 2026 Fiifi Kaasiebrew. All rights reserved.
+ */
 const fs = require('fs'), vm = require('vm'), path = require('path');
 const D = path.join(__dirname, '../desktop/node_modules/');
 const libSrc = fs.readFileSync(path.join(__dirname, '../src/sql-library.js'), 'utf8');

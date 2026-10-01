@@ -1,3 +1,8 @@
+/*
+ * Tablewise — preload.js
+ * Author: Fiifi Kaasiebrew (https://github.com/fiifikaasiebrew)
+ * Copyright (c) 2026 Fiifi Kaasiebrew. All rights reserved.
+ */
 // Tablewise desktop — safe bridge between the page and the main process
 const { contextBridge, ipcRenderer, webUtils } = require('electron');
 const call = async (ch, ...a) => { const r = await ipcRenderer.invoke(ch, ...a); if (!r.ok) throw new Error(r.error); return r.v; };

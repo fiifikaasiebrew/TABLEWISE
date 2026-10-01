@@ -1,3 +1,8 @@
+/*
+ * Tablewise — build.mjs
+ * Author: Fiifi Kaasiebrew (https://github.com/fiifikaasiebrew)
+ * Copyright (c) 2026 Fiifi Kaasiebrew. All rights reserved.
+ */
 // Builds the browser artifact page and the desktop app page from src/
 import fs from 'node:fs';
 const R = p => fs.readFileSync(new URL(p, import.meta.url), 'utf8');
@@ -21,7 +26,7 @@ fs.mkdirSync(new URL('./desktop/app/lib/', import.meta.url), { recursive: true }
 fs.copyFileSync(new URL(NM + 'xlsx/dist/xlsx.full.min.js', import.meta.url), new URL('./desktop/app/lib/xlsx.full.min.js', import.meta.url));
 fs.copyFileSync(new URL('./src/sqlite-core.js', import.meta.url), new URL('./desktop/app/sqlite-core.js', import.meta.url));
 fs.writeFileSync(new URL('./desktop/app/index.html', import.meta.url), `<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="Fiifi Kaasiebrew">
 <style>[hidden]{display:none!important}</style>
 </head><body>
 ${body('<script src="lib/xlsx.full.min.js"></script>')}

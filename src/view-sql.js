@@ -1,3 +1,8 @@
+/*
+ * Tablewise — view-sql.js
+ * Author: Fiifi Kaasiebrew (https://github.com/fiifikaasiebrew)
+ * Copyright (c) 2026 Fiifi Kaasiebrew. All rights reserved.
+ */
 /* SQL editor for people who want full control */
 function sqlTemplates() {
   const t = (TW.state.tables.find(x => x.type === 'table') || { name: 'my_table' }).name;

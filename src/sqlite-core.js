@@ -1,3 +1,8 @@
+/*
+ * Tablewise — sqlite-core.js
+ * Author: Fiifi Kaasiebrew (https://github.com/fiifikaasiebrew)
+ * Copyright (c) 2026 Fiifi Kaasiebrew. All rights reserved.
+ */
 /* Tablewise — SQLite engine wrapper (works in the browser and in Node/Electron with sql.js) */
 (function (root) {
   function qi(name) { return '"' + String(name).replace(/"/g, '""') + '"'; }

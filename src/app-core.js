@@ -1,3 +1,8 @@
+/*
+ * Tablewise — app-core.js
+ * Author: Fiifi Kaasiebrew (https://github.com/fiifikaasiebrew)
+ * Copyright (c) 2026 Fiifi Kaasiebrew. All rights reserved.
+ */
 /* Tablewise — core: helpers, dialects, state, persistence */
 'use strict';
 const TW = window.TW = {};

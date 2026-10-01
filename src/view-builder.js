@@ -1,3 +1,8 @@
+/*
+ * Tablewise — view-builder.js
+ * Author: Fiifi Kaasiebrew (https://github.com/fiifikaasiebrew)
+ * Copyright (c) 2026 Fiifi Kaasiebrew. All rights reserved.
+ */
 /* Build a question: drag-and-drop query builder */
 TW.qb = TW.qb || { tables: [], joins: [], cols: [], filters: { mode: 'AND', rules: [] }, having: [], sorts: [], limit: 200, distinct: false, seq: 1 };
 const FN_OUT = { YEAR: 'year', YM: 'month', MONTH: 'month_no', DOW: 'weekday', DATE: 'day', UPPER: 'upper', LOWER: 'lower', TRIM: 'trimmed', FIRST1: 'first_letter', LENGTH: 'length', ROUND0: 'rounded', ROUND2: 'rounded', ABS: 'abs' };

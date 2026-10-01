@@ -1,3 +1,8 @@
+/*
+ * Tablewise — view-browse.js
+ * Author: Fiifi Kaasiebrew (https://github.com/fiifikaasiebrew)
+ * Copyright (c) 2026 Fiifi Kaasiebrew. All rights reserved.
+ */
 /* Browse data: spreadsheet-style table view with sort, filter, edit, add, delete */
 const OPS = [
   { id: 'eq', label: 'is', n: 1 }, { id: 'ne', label: 'is not', n: 1 },

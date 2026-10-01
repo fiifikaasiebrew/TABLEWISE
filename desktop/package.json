@@ -1,13 +1,16 @@
 {
   "name": "tablewise",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "A simple database manager for people who do not write SQL",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "dist": "electron-builder --win nsis portable"
   },
-  "author": "Fiifi Kaasiebrew",
+  "author": {
+    "name": "Fiifi Kaasiebrew",
+    "url": "https://github.com/fiifikaasiebrew"
+  },
   "license": "UNLICENSED",
   "dependencies": {
     "mssql": "^12.7.2",
@@ -71,6 +74,13 @@
         "name": "SQLite database",
         "role": "Editor"
       }
-    ]
+    ],
+    "copyright": "Copyright \u00a9 2026 Fiifi Kaasiebrew",
+    "publish": null
+  },
+  "homepage": "https://github.com/fiifikaasiebrew/TABLEWISE",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fiifikaasiebrew/TABLEWISE.git"
   }
 }

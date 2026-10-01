@@ -1,3 +1,8 @@
+/*
+ * Tablewise — app-main.js
+ * Author: Fiifi Kaasiebrew (https://github.com/fiifikaasiebrew)
+ * Copyright (c) 2026 Fiifi Kaasiebrew. All rights reserved.
+ */
 /* Navigation, adapters and start-up */
 const NAV = [
   ['home', 'Home', 'home'], ['browse', 'Browse data', 'table'], ['design', 'Table design', 'design'], ['builder', 'Question builder', 'build'],

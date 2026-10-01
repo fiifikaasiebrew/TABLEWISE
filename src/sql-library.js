@@ -1,3 +1,8 @@
+/*
+ * Tablewise — sql-library.js
+ * Author: Fiifi Kaasiebrew (https://github.com/fiifikaasiebrew)
+ * Copyright (c) 2026 Fiifi Kaasiebrew. All rights reserved.
+ */
 /* The SQL function library: every entry explained simply, with an example that runs on the practice data.
    ex is either one string (works everywhere) or {sqlite, postgres, mysql, mssql, all}. "LIMIT n" at the end is
    turned into TOP n for SQL Server automatically. */

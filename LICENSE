@@ -1,0 +1,11 @@
+Copyright (c) 2026 Fiifi Kaasiebrew. All rights reserved.
+
+Tablewise and its source code are the work of Fiifi Kaasiebrew.
+You may download and use the Tablewise app free of charge.
+You may not copy, modify, publish or sell the source code, in whole or in part,
+without written permission from the author.
+
+Contact: https://github.com/fiifikaasiebrew
+
+Tablewise uses Electron, sql.js, node-postgres, mysql2, mssql and SheetJS,
+each under its own open-source licence.

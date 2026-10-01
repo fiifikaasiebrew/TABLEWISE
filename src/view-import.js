@@ -1,3 +1,8 @@
+/*
+ * Tablewise — view-import.js
+ * Author: Fiifi Kaasiebrew (https://github.com/fiifikaasiebrew)
+ * Copyright (c) 2026 Fiifi Kaasiebrew. All rights reserved.
+ */
 /* Import: CSV, TSV, Excel, JSON into tables; open SQLite files */
 function parseCSV(text) {
   text = text.replace(/^﻿/, '');

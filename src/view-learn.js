@@ -1,3 +1,8 @@
+/*
+ * Tablewise — view-learn.js
+ * Author: Fiifi Kaasiebrew (https://github.com/fiifikaasiebrew)
+ * Copyright (c) 2026 Fiifi Kaasiebrew. All rights reserved.
+ */
 /* Learn SQL: course view. Everything runs on a private practice copy, so real data is never touched. */
 TW.learn = {
   db: null, adapter: null,

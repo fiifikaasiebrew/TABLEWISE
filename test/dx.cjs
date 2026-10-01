@@ -1,3 +1,8 @@
+/*
+ * Tablewise — dx.cjs
+ * Author: Fiifi Kaasiebrew (https://github.com/fiifikaasiebrew)
+ * Copyright (c) 2026 Fiifi Kaasiebrew. All rights reserved.
+ */
 const path=require('path'); const D=path.join(__dirname,'../desktop/node_modules/');
 (async()=>{
  const { Client } = require(D+'pg'); const pg=new Client({host:'127.0.0.1',user:'tw',password:'tw',database:'twdb'}); await pg.connect();

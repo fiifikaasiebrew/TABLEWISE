@@ -1,3 +1,8 @@
+/*
+ * Tablewise — learn-2.js
+ * Author: Fiifi Kaasiebrew (https://github.com/fiifikaasiebrew)
+ * Copyright (c) 2026 Fiifi Kaasiebrew. All rights reserved.
+ */
 /* Learn SQL — part 2: totals and groups, working with values, connecting tables. */
 
 /* ================= 4. TOTALS AND GROUPS ================= */

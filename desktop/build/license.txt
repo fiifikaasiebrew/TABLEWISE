@@ -1,4 +1,5 @@
 Tablewise
+Copyright (c) 2026 Fiifi Kaasiebrew. All rights reserved.
 
 Tablewise is a database manager for people who do not write SQL.
 

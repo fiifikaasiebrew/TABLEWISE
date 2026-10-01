@@ -1,3 +1,8 @@
+/*
+ * Tablewise — view-misc.js
+ * Author: Fiifi Kaasiebrew (https://github.com/fiifikaasiebrew)
+ * Copyright (c) 2026 Fiifi Kaasiebrew. All rights reserved.
+ */
 /* Activity log, Databases (connections), Settings */
 TW.views.activity = async function (root) {
   const log = TW.state.log;
@@ -82,7 +87,7 @@ TW.views.settings = async function (root) {
   const aiBox = h('div', { class: 'panel stack', style: { maxWidth: '720px', marginTop: '16px' } });
   root.append(aiBox);
   TW.ai.renderSettings(aiBox);
-  root.append(h('p', { class: 'faint', style: { marginTop: '24px', fontSize: '12.5px' } }, `Tablewise version ${window.TW_VERSION || ''}${TW.isDesktop ? ' (desktop app)' : ' (browser)'}`));
+  root.append(h('p', { class: 'faint', style: { marginTop: '24px', fontSize: '12.5px' } }, `Tablewise version ${window.TW_VERSION || ''}${TW.isDesktop ? ' (desktop app)' : ' (browser)'} · Made by Fiifi Kaasiebrew · © 2026`));
 };
 function applyTheme(v) {
   store.set('theme', v);
